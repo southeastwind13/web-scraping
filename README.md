@@ -1,1 +1,1 @@
-This is read me file.
+This project create for setup the web scraping template and it will use for the future project.
