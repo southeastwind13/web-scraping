@@ -8,7 +8,6 @@ class Browser():
     def __init__(self, driver_path, is_option:bool = True, 
                  is_headless:bool = False):
         
-
         service = Service(executable_path=r'' + driver_path)
         self.options = webdriver.ChromeOptions()
 
@@ -27,6 +26,9 @@ class Browser():
             self.options.add_argument('--headless')
 
         self.driver = webdriver.Chrome(service=service,options = self.options)
+        
+    def initial_browser(self):
+        pass
 
     def get_driver(self):
         return self.driver
